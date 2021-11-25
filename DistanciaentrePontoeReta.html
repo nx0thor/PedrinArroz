@@ -1,25 +1,60 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
+
+<head lang="pt-BR">
+
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Documento</title>
     <link rel="stylesheet" href="css/menu.css">
-</head>
+    <link rel="stylesheet" href="css/calculadora.css">
+    <link rel="stylesheet" href="css/distanciadopontoereta.css">
+  </head>
+
 <body>
-   
-    <nav>
 
-      <a href="index.html">Clássica</a>
-      <a href="EquacoesDoisPontos.html">Equações Dois Pontos</a>
-      <a href="DistanciaentrePontoeReta.html">Distância entre Ponto e Reta</a>
-      <a href="EquacaoReduzida.html">Equação Reduzida</a>
-      <a href="PosicaoRelativadasRetas.html">Posição Relativa das Retas</a>
+  <nav>
 
-    </nav>
+    <a href="index.html">Clássica</a>
+    <a href="EquacoesDoisPontos.html">Equações Dois Pontos</a>
+    <a href="DistanciaentrePontoeReta.html">Distância entre Ponto e Reta</a>
+    <a href="EquacaoReduzida.html">Equação Reduzida</a>
+    <a href="PosicaoRelativadasRetas.html">Posição Relativa das Retas</a>
 
-<h1>Distância Entre Ponto e Reta</h1>
+  </nav>
+  <div class="calculadora">
+    <input type="text" disabled class="display" id="display">
+
+    <div class="pontos">
+      <label>Ponto A</label>
+      <div><span>X:</span><input type="number" class="ponto" id="xPontoA"></div>
+      <div><span>Y:</span><input type="number" class="ponto" id="yPontoA"></div>
+    </div>
+
+    <div class="equacao">
+      <label>Equação</label>
+      <div><span>A:</span><input type="number" class="ponto" id="aP"></div>
+      <div><span>B:</span><input type="number" class="ponto" id="bP"></div>
+      <div><span>C:</span><input type="number" class="ponto" id="cP"></div>
+    </div>
+
+    <div class="primeira-linha">
+      <button onclick="limpar()">LIMPAR</button>
+    </div>
+
+    <div class="primeira-linha">
+      <button onclick="calc()">DISTÂNCIA DE PONTO E RETA</button>
+    </div>
+    </div>
+
+
+
+  </div>
+
+  <script src="javascript/distanciadopontoereta.js"></script>
+
 
 </body>
+
 </html>
